@@ -1,3 +1,1 @@
-{{- if lt (.Capabilities.KubeVersion.Minor | int) 28 -}}
-{{- fail "This chart requeires kubernetes version 1.28 or higher" -}}
-{{- end }}
+{{ include "myapp.fullname" . }}
