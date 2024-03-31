@@ -1,0 +1,44 @@
+apiVersion: v1
+entries:
+  myapp:
+  - apiVersion: v2
+    appVersion: 2.1.0
+    created: "2024-03-31T16:45:52.567721265+07:00"
+    dependencies:
+    - import-values:
+      - child: master
+        parent: imported
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ^19.x
+    - name: libpolicy
+      repository: file://../libpolicy
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: ee289388c15ff50abc5c7ee3d74e15d387839aff55780dd92052864b16e31a69
+    name: myapp
+    type: application
+    urls:
+    - myapp-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 2.1.0
+    created: "2024-03-31T16:27:10.58009339+07:00"
+    dependencies:
+    - import-values:
+      - child: master
+        parent: imported
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ^19.x
+    - name: libpolicy
+      repository: file://../libpolicy
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: 268a482e510111a89662da188b52ed12b2ba89e9a4d903d8fa2c91e4c8c517a5
+    name: myapp
+    type: application
+    urls:
+    - myapp-0.2.1.tgz
+    version: 0.2.1
+generated: "2024-03-31T16:45:52.553465362+07:00"
